@@ -1,0 +1,11 @@
+﻿@page
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = "Access denied";
+}
+
+<header>
+    <h1 class="text-danger">Greška</h1>
+    <p class="text-danger">Morate se prvo prijaviti ili nemate pristup ovoj stranici</p>
+    <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-dark mt-2">Idite na prijavu</a>
+</header>

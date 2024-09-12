@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Levres.Models.Servis>
+
+@{
+    ViewData["Title"] = "Servisi";
+}
+
+<h1 class="m-auto archivo-h1">Pregled servis</h1>
+<table class="table">
+    <thead>
+        <tr>
+            @if (User.IsInRole("Administrator"))
+            {
+                <th>
+                    @Html.DisplayNameFor(model => model.kupacID)
+            </th>
+            }
+            <th>
+                @Html.DisplayNameFor(model => model.model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.registracijskeTablice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.opis)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @if(User.IsInRole("Administrator")){
+            <td>
+                @Html.DisplayFor(modelItem => item.kupacID)
+            </td>
+            }
+            <td>
+                @Html.DisplayFor(modelItem => item.model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.registracijskeTablice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.opis)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

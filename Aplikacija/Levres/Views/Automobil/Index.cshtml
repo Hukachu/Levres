@@ -1,0 +1,125 @@
+﻿@model IEnumerable<Levres.Models.Automobil>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.godinaProizvodnje)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gorivo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.transmisija)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.brojVrata)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.boja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pogon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.felge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.emisioniStandard)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sjedecaMjesta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.masaTezina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vrstaInterijera)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.svjetla)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cijena)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.slike)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.motor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.godinaProizvodnje)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gorivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.transmisija)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.brojVrata)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.boja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pogon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.felge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.emisioniStandard)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sjedecaMjesta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.masaTezina)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vrstaInterijera)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.svjetla)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cijena)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.slike)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.motor)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

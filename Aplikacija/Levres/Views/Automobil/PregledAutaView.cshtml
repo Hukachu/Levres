@@ -1,0 +1,163 @@
+﻿@model IEnumerable<Levres.Models.Automobil>
+
+@{
+    ViewData["Title"] = "Prodaja";
+}
+
+
+<div class="w-100 text-center m-auto">
+<h1 class="archivo-h1 mt-2 fw-bold">prodaja</h1>
+<h3 class="archivo-light">kupite novo ili polovno vozilo trenutno dostupno na lageru</h3>
+</div>
+<style>
+   .filter-container {
+        border: 2px solid #ddd;
+        background-color: ghostwhite;
+        box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.57);
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .car-card-a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .car-card {
+        text-decoration: none;
+        color: inherit;
+        box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.57);
+        border: 1px solid #ddd;
+        background-color: ghostwhite;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .car-image-cont {
+        width: 100%;
+        display:flex;
+        height: 15em;
+        background-color: #cacaca;
+        overflow:hidden;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .car-image-cont img{
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .car-card-body{
+        text-decoration: none;
+        color: inherit;
+        padding: .5em;
+
+    }
+
+    .car-card-a:hover{
+        color:gray;
+    }
+    .car-card-body p{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .car-card-body h5 {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .car-card-body h4 {
+        text-decoration: none;
+        color: inherit;
+    }
+</style>
+
+<div class="w-100 m-auto">
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Filters -->
+            <div class="col-md-3"> 
+                <div class="filter-container">
+                    <h5 class="archivo-medium fs-2">FILTERI</h5>
+                    <form asp-action="PregledAutaView" method="get">
+                        <div class="form-group">
+                            <label for="Tip">TIP VOZILA:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="Tip" value="Nov" id="Nov" @(ViewData["Tip"]?.ToString() == "Nov" ? "checked" : "") />
+                                <label class="form-check-label" for="Nov">Novo vozilo</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="Tip" value="Polovan" id="Polovan" @(ViewData["Tip"]?.ToString() == "Polovan" ? "checked" : "") />
+                                <label class="form-check-label" for="Polovan">Polovno vozilo</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="model">MODEL:</label>
+                            @Html.DropDownList("model", new SelectList(Enum.GetValues(typeof(Model)).Cast<Model>()), "Izaberi", new { @class = "form-control" })
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cijenaOd">CIJENA:</label>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="number" class="form-control" name="cijenaOd" placeholder="OD" value="@ViewData["CijenaOd"]">
+                                </div>
+                                <div class="col">
+                                    <input type="number" class="form-control" name="cijenaDo" placeholder="DO" value="@ViewData["CijenaDo"]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="godisteOd">GODIŠTE:</label>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="month" class="form-control" name="godisteOd" placeholder="OD" value="@ViewData["GodisteOd"]">
+                                </div>
+                                <div class="col">
+                                    <input type="month" class="form-control" name="godisteDo" placeholder="DO" value="@ViewData["GodisteDo"]">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" value="PregledAutaView" class="btn btn-dark py-2 px-3 mt-2">Filtriraj</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Car Listings -->
+            <div class="col-md-9">
+                <div class="row">
+                    @foreach (var car in Model)
+                    {
+                        <div class="col-md-4">
+                            <a class="car-card-a" href="@Url.Action("Details", @car.GetType().Name, new { id = car.id })">
+                            <div class="car-card">
+                                <div class="car-image-cont">
+                                     <img src="~/uploads/@car.slike" alt="@car.model">
+                                </div>
+                                <div class="car-card-body">
+                                    <h4 class="archivo-medium">LEVRES</h4><h4 class="car-card-title archivo-light">@car.model</h4>
+                                    
+                                    @if (@car.GetType().Name.ToString() == "NoviAutomobil")
+                                    {
+                                        <p>Nov automobil</p>
+                                    }
+                                    else
+                                    {
+                                        <p>Polovan automobil</p>
+                                    }
+                                    <p>GODIŠTE: @car.godinaProizvodnje.Year.ToString()</p>
+                                    <p class="archivo-medium">CIJENA: @car.cijena KM</p>
+                                      
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

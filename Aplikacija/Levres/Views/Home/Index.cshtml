@@ -1,0 +1,225 @@
+﻿@{
+    ViewData["Title"] = "Levres";
+}
+
+@if (!User.IsInRole("Administrator") && !User.IsInRole("Zaposlenik"))
+{
+    <div id="carouselExampleControls" class="carousel slide h-25" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/images/carousel/1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/carousel/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/carousel/3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container justify-content-center align-items-center text-center pt-4">
+        <h1 class="archivo-h1 w-100 text-center">levres</h1>
+        <h3 class="archivo-light w-100 justify-content-center">novi način kupovine vašeg novog vozila</h3>
+        <p class="w-100 justify-content-center mt-3">
+            Dobrodošli na Levres – Vaš pouzdan partner za kupovinu novih i polovnih vozila!
+
+            U Levresu smo posvećeni pružanju jedinstvenog iskustva u kupovini vozila koje se prilagođava vašim potrebama i željama. Naša misija je da revolucioniramo tržište automobila kroz inovativan pristup prodaji, omogućavajući vam jednostavan i transparentan proces odabira i kupovine vašeg novog ili polovnog automobila.
+        </p>
+    </div>
+}
+else if (User.IsInRole("Kupac"))
+{
+    <div id="carouselExampleControls" class="carousel slide h-25" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/images/carousel/1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/carousel/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/carousel/3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container justify-content-center align-items-center text-center pt-4">
+        <h1 class="archivo-h1 w-100 text-center">levres</h1>
+        <h3 class="archivo-light w-100 justify-content-center">novi način kupovine vašeg novog vozila</h3>
+        <p class="w-100 justify-content-center mt-3">
+            Dobrodošli na Levres – Vaš pouzdan partner za kupovinu novih i polovnih vozila!
+
+            U Levresu smo posvećeni pružanju jedinstvenog iskustva u kupovini vozila koje se prilagođava vašim potrebama i željama. Naša misija je da revolucioniramo tržište automobila kroz inovativan pristup prodaji, omogućavajući vam jednostavan i transparentan proces odabira i kupovine vašeg novog ili polovnog automobila.
+        </p>
+    </div>
+}
+else if (User.IsInRole("Zaposlenik"))
+{
+    <div class="w-100 text-center m-auto">
+        <h1 class="archivo-h1 mt-2">Dobrodošao</h1>
+    </div>
+    <div class ="col-md-10 m-auto mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <a class="car-card-a">
+                    <div class="car-card">
+                        <div class="car-image-cont">
+                            <img src="~/images/Procjena.jpg">
+                        </div>
+                        <div class="car-card-body">
+                            <h4 class="archivo-medium">PROCJENA VRIJEDNOSTI VOZILA</h4>
+                            <div class="w-100 d-flex justify-content-center mt-3">
+                                <a asp-area="" asp-controller="Home" asp-action="ProcjenaVrijednostiView" class="btn btn-dark">Otvori</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="car-card-a">
+                    <div class="car-card">
+                        <div class="car-image-cont">
+                            <img src="~/images/Servis.jpg">
+                        </div>
+                        <div class="car-card-body">
+                            <h4 class="archivo-medium">PREGLEDAJ ZAKAZANE SERVISE</h4>
+                            <div class="w-100 d-flex justify-content-center mt-3">
+                                <a asp-area="" asp-controller="Servis" asp-action="Index" class="btn btn-dark">Otvori</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a class="car-card-a">
+                    <div class="car-card">
+                        <div class="car-image-cont">
+                            <img src="~/images/Oprema.jpg">
+                        </div>
+                        <div class="car-card-body">
+                            <h4 class="archivo-medium">PRONAĐI ZAMJENSKI DIO ZA VOZILO</h4>
+                            <div class="w-100 d-flex justify-content-center mt-3">
+                                <a asp-area="" asp-controller="Oprema" asp-action="PregledOpremeView" class="btn btn-dark">Otvori</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+      </div>
+}
+else if (User.IsInRole("Administrator"))
+{
+    <h1 class="archivo-h1 w-100 text-center">Administratorski pregled</h1>
+    <div class="col-md-10 m-auto mt-5">
+        <div class="row">
+            <div class="col-md-4 mt-4">
+                <a asp-area="" asp-controller="Automobil" asp-action="Index" class="btn btn-dark">Pregled Automobila</a>
+            </div>
+            <div class="col-md-4 mt-4">
+                <a asp-area="" asp-controller="NoviAutomobil" asp-action="Create" class="btn btn-dark">Kreiraj Novi Automobil</a>
+            </div>
+            <div class="col-md-4 mt-4">
+                <a asp-area="" asp-controller="PolovniAutomobil" asp-action="Create" class="btn btn-dark">Kreiraj Polovni Automobil</a>
+            </div>
+            <div class="col-md-4 mt-4">
+                <a asp-area="" asp-controller="Home" asp-action="ProcjenaVrijednostiVIew" class="btn btn-dark">Procjena Vrijednosti</a>
+            </div>
+            <div class="col-md-4 mt-4">
+                <a asp-area="" asp-controller="Konfiguracija" asp-action="Index" class="btn btn-dark">Pregled Konfiguracija</a>
+            </div>
+            <div class="col-md-4 mt-4">
+                <a asp-area="" asp-controller="Narudzba" asp-action="Index" class="btn btn-dark">Pregled Narudžbi</a>
+            </div>
+            <div class="col-md-4 mt-4">
+                <a asp-area="" asp-controller="Oprema" asp-action="Index" class="btn btn-dark">Pregled Opreme</a>
+            </div>
+            <div class="col-md-4 mt-4">
+                <a asp-area="" asp-controller="Oprema" asp-action="PregledOpremeView" class="btn btn-dark">Oprema</a>
+            </div>
+            <div class="col-md-4 mt-4">
+                <a asp-area="" asp-controller="Servis" asp-action="Index" class="btn btn-dark">Pregled Servisa</a>
+            </div>
+        </div>
+    </div>
+}
+<style>
+    .filter-container {
+        border: 2px solid #ddd;
+        background-color: ghostwhite;
+        box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.57);
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .car-card-a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .car-card {
+        text-decoration: none;
+        color: inherit;
+        box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.57);
+        border: 1px solid #ddd;
+        background-color: ghostwhite;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .car-image-cont {
+        width: 100%;
+        display: flex;
+        height: 15em;
+        background-color: #cacaca;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .car-image-cont img {
+            height: 100%;
+            margin: 0 auto;
+        }
+
+    .car-card-body {
+        text-decoration: none;
+        color: inherit;
+        padding: .5em;
+    }
+
+    .car-card-a:hover {
+        color: gray;
+    }
+
+    .car-card-body p {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .car-card-body h5 {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .car-card-body h4 {
+        text-decoration: none;
+        color: inherit;
+    }
+</style>

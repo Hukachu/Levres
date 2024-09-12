@@ -1,0 +1,47 @@
+﻿@model Levres.Models.Servis
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Izbrišite servis</h1>
+
+<h3>Da li ste sigurni da želite izbrisati servis?</h3>
+<div>
+    <h4>Servis</h4>
+    <hr />
+    <dl class="row">
+        @if(User.IsInRole("Administrator")){
+        <dt class = "col-sm-5">
+            @Html.DisplayNameFor(model => model.kupacID)
+        </dt>
+        <dd class = "col-sm-7">
+            @Html.DisplayFor(model => model.kupacID)
+        </dd>
+        }
+        <dt class="col-sm-5">
+            @Html.DisplayNameFor(model => model.model)
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.model)
+        </dd>
+        <dt class="col-sm-5">
+            Registracijske tablice
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.registracijskeTablice)
+        </dd>
+        <dt class="col-sm-5">
+            @Html.DisplayNameFor(model => model.opis)
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.opis)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

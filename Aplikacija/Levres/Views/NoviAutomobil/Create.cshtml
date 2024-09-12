@@ -1,0 +1,115 @@
+﻿@model Levres.Models.NoviAutomobil
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>NoviAutomobil</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="garancija" class="control-label"></label>
+                <input asp-for="garancija" class="form-control" />
+                <span asp-validation-for="garancija" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @Html.Label("Model")
+                @Html.DropDownListFor(model => model.model, new SelectList(Enum.GetValues(typeof(Levres.Models.Model))), "Izaberi", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.model, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.Label("Godina proizvodnje")
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.godinaProizvodnje, new { htmlAttributes = new { @class = "form-control", type = "month" } })
+                    @Html.ValidationMessageFor(model => model.godinaProizvodnje, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.Label("Gorivo")
+                @Html.DropDownListFor(model => model.gorivo, new SelectList(Enum.GetValues(typeof(Levres.Models.Gorivo))), "Izaberi", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.gorivo, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.Label("Transmisija")
+                @Html.DropDownListFor(model => model.transmisija, new SelectList(Enum.GetValues(typeof(Levres.Models.Transmisija))), "Izaberi", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.transmisija, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label asp-for="brojVrata" class="control-label"></label>
+                <input asp-for="brojVrata" class="form-control" />
+                <span asp-validation-for="brojVrata" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @Html.Label("Boja")
+                @Html.DropDownListFor(model => model.boja, new SelectList(Enum.GetValues(typeof(Levres.Models.Boja))), "Izaberi", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.boja, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.Label("Pogon")
+                @Html.DropDownListFor(model => model.pogon, new SelectList(Enum.GetValues(typeof(Levres.Models.Pogon))), "Izaberi", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.pogon, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.Label("Točkovi")
+                @Html.DropDownListFor(model => model.felge, new SelectList(Enum.GetValues(typeof(Levres.Models.Felge))), "Izaberi", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.felge, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.Label("Emisioni standard")
+                @Html.DropDownListFor(model => model.emisioniStandard, new SelectList(Enum.GetValues(typeof(Levres.Models.EmisioniStandard))), "Izaberi", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.emisioniStandard, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label asp-for="sjedecaMjesta" class="control-label"></label>
+                <input asp-for="sjedecaMjesta" class="form-control" />
+                <span asp-validation-for="sjedecaMjesta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="masaTezina" class="control-label"></label>
+                <input asp-for="masaTezina" class="form-control" />
+                <span asp-validation-for="masaTezina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @Html.Label("Interijer")
+                @Html.DropDownListFor(model => model.vrstaInterijera, new SelectList(Enum.GetValues(typeof(Levres.Models.VrstaInterijera))), "Izaberi", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.vrstaInterijera, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.Label("Svjetla")
+                @Html.DropDownListFor(model => model.svjetla, new SelectList(Enum.GetValues(typeof(Levres.Models.Svjetla))), "Izaberi", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.svjetla, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label asp-for="cijena" class="control-label"></label>
+                <input asp-for="cijena" class="form-control" />
+                <span asp-validation-for="cijena" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @Html.Label("Motor")
+                @Html.DropDownListFor(model => model.motor, new SelectList(Enum.GetValues(typeof(Levres.Models.Motor))), "Izaberi", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.motor, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label class="control-label">Slike</label>
+                <input type="file" class="form-control" name="slika" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

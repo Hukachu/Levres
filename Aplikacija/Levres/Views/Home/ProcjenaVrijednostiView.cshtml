@@ -1,0 +1,45 @@
+﻿@model Levres.Models.PolovniAutomobil
+
+@{
+    ViewData["Title"] = "Procjena";
+}
+<div class="w-100 text-center m-auto">
+    <h1 class="archivo-h1 mt-2 fw-bold">Procjena vrijednosti vozila</h1>
+</div>
+<div class="detail-cont mt-3 w-75 m-auto">
+    <div class="row">
+        <div class="col-md-6 p-3">
+    <form asp-action="ProcjenaVrijednostiView" method="post">
+        <div class="form-group">
+            <label for="Model">Model:</label>
+            @Html.DropDownListFor(model => model.model, new SelectList(Enum.GetValues(typeof(Levres.Models.Model))), "Izaberi", htmlAttributes: new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <label for="GodinaProizvodnje">Godina proizvodnje:</label>
+            <input type="month" class="form-control" id="GodinaProizvodnje" asp-for="godinaProizvodnje" />
+        </div>
+        <div class="form-group">
+            <label for="Kilometraza">Kilometraža:</label>
+            <input type="number" class="form-control" id="Kilometraza" asp-for="kilometraza" />
+        </div>
+        <div class="form-group">
+            <label for="Stete">Štete:</label>
+            <input type="text" class="form-control" id="Stete" placeholder="Ostaviti prazno ako nema" asp-for="stete" />
+        </div>
+        <div class="form-group">
+            <label for="BrojVlasnika">Broj vlasnika:</label>
+            <input type="number" class="form-control" id="BrojVlasnika" asp-for="brojVlasnika" />
+        </div>
+        <button type="submit" class="btn btn-dark px-3 py-2 m-auto mt-3">Procijeni</button>
+    </form>
+        </div>    
+        <div class="col-md-6 d-flex row text-center align-items-center">
+            <div class="col-sm-12">
+                <h4 class="">Procjena vrijednosti: </h4>
+            @if (ViewBag.ApproximatedPrice != null){
+                <h2 class="fs-1">@ViewBag.ApproximatedPrice KM</h2>
+            }
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,142 @@
+﻿@model Levres.Models.PolovniAutomobil
+
+@{
+    ViewData["Title"] = "Levres " + @Model.model;
+}
+
+<h1 class="archivo-h1 mt-3"><b>Levres</b> @Model.model</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-5">
+            <dl class="row detail-cont mt-2">
+                <dt class="col-sm-6 fw-bold">
+                    Kilometraza:
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.kilometraza) km
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    Stete:
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.stete)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    Broj vlasnika:
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.brojVlasnika)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    Godina proizvodnje:
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.godinaProizvodnje.Year)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    Gorivo:
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.gorivo)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    @Html.DisplayNameFor(model => model.transmisija):
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.transmisija)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    broj vrata:
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.brojVrata)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    @Html.DisplayNameFor(model => model.boja):
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.boja)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    @Html.DisplayNameFor(model => model.pogon):
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.pogon)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    @Html.DisplayNameFor(model => model.felge):
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.felge)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    Emisioni standard:
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.emisioniStandard)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    broj sjedecih mjesta:
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.sjedecaMjesta)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    Težina:
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.masaTezina)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    vrsta interijera:
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.vrstaInterijera)
+                </dd>
+                <dt class="col-sm-6 fw-bold">
+                    @Html.DisplayNameFor(model => model.svjetla):
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.svjetla)
+                </dd>
+
+                <dt class="col-sm-6 fw-bold">
+                    Motor:
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.motor)
+                </dd>
+
+                <dt class="col-sm-6 fw-bold">
+                    Cijena:
+                </dt>
+                <dd class="col-sm-6">
+                    @Html.DisplayFor(model => model.cijena) KM
+                </dd>
+            </dl>
+
+        </div>
+
+        <div class="col-md-7">
+            <div class="detail-img-cont mt-2">
+                <img src="~/uploads/@Model.slike" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<a asp-area="" asp-controller="Automobil" asp-action="PregledAutaView" class="btn btn-dark mt-2">Nazad</a>
+<form asp-action="Create" asp-controller="Narudzba" method="post">
+    <input type="hidden" name="automobilID" value="@Model.id" />
+    <input type="hidden" name="kupacID" value="abab" />
+    <input type="hidden" name="datum" value="@DateOnly.FromDateTime(DateTime.Now)" />
+    <input type="hidden" name="Tip" value="PolovniAutomobil" />
+    <button type="submit" class="btn btn-dark archivo-medium mt-3">NARUČI</button>
+</form>
+@if (User.IsInRole("Administrator"))
+{
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model?.id">Edit</a> |
+        <a asp-action="Delete">Delete</a>
+    </div>
+}

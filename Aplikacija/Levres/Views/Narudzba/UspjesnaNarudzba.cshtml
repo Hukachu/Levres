@@ -1,0 +1,30 @@
+﻿@model Levres.Models.Narudzba
+
+@{
+    ViewData["Title"] = "Narudzba";
+}
+
+<div class="w-100 text-center m-auto">
+    <h1 class="archivo-h1 mt-2 fw-bold">Narudžba uspješna</h1>
+    <h3 class="archivo-light">narudžba je uspješno kreirana i poslana</h3>
+</div>
+<div class="detail-cont w-50 m-auto p-4 mt-2">
+    <div class="w-100">
+        <dl class="row mt-2">
+            <dt class="col-sm-6 fw-bold">
+                Automobil ID:
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.automobilID)
+            </dd>
+            <dt class="col-sm-6 fw-bold">
+                Datum narudžbe:
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.datum)
+            </dd>
+           </dl>
+    </div>
+    <a asp-area="" asp-controller="Automobil" asp-action="PregledAutaView" class="btn btn-dark mt-2">Nazad</a>
+</div>
+

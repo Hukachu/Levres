@@ -1,0 +1,40 @@
+﻿@model Levres.Models.Servis
+
+@{
+    ViewData["Title"] = "Servis";
+}
+
+<div class="w-100 text-center m-auto">
+    <h1 class="archivo-h1 mt-2 fw-bold">servis</h1>
+    <h3 class="archivo-light">ZAKAŽITE SERVIS ZA VAŠE VOZILO</h3>
+</div>
+<div class="detail-cont col-md-6 m-auto p-4 mt-2">
+    <div class="w-100">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                @Html.Label("Model")
+                @Html.DropDownListFor(model => model.model, new SelectList(Enum.GetValues(typeof(Levres.Models.Model))), "Izaberi", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.model, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group mt-2">
+                Registracijske tablice
+                <input asp-for="registracijskeTablice" class="form-control" />
+                <span asp-validation-for="registracijskeTablice" class="text-danger"></span>
+            </div>
+                <div class="form-group d-none">
+                    <label asp-for="kupacID" class="control-label"></label>
+                    <input asp-for="kupacID" class="form-control" value="ababab"/>
+                </div>
+            <div class="form-group mt-2">
+                <label asp-for="opis" class="control-label"></label>
+                <input asp-for="opis" class="form-control" />
+                <span asp-validation-for="opis" class="text-danger"></span>
+            </div>
+            <div class="form-group d-flex w-100 justify-content-center">
+                <input type="submit" value="Zakaži" class="btn btn-dark mt-3 py-2 px-3"  />
+            </div>
+        </form>
+    </div>
+</div>
+

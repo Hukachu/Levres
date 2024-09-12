@@ -1,0 +1,41 @@
+﻿@model Levres.Models.Servis
+
+@{
+    ViewData["Title"] = "Servis";
+}
+
+<h1 class="m-auto">Servis uspješno zakazan</h1>
+
+<div>
+    <h4>Detalji servisa</h4>
+    <hr />
+    <dl class="row">
+        
+        <dt class = "col-sm-5">
+            @Html.DisplayNameFor(model => model.model)
+        </dt>
+        <dd class = "col-sm-7">
+            @Html.DisplayFor(model => model.model)
+        </dd>
+        <dt class = "col-sm-5">
+            Registracijske tablice
+        </dt>
+        <dd class = "col-sm-7">
+            @Html.DisplayFor(model => model.registracijskeTablice)
+        </dd>
+        <dt class = "col-sm-5">
+            @Html.DisplayNameFor(model => model.opis)
+        </dt>
+        <dd class = "col-sm-7">
+            @Html.DisplayFor(model => model.opis)
+        </dd>
+    </dl>
+</div>
+<a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-dark mt-2">Nazad</a>
+@if (User.IsInRole("Administrator"))
+{
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model?.id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+}

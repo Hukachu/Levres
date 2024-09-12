@@ -1,0 +1,42 @@
+﻿@model Levres.Models.Oprema
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Oprema</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nazivDijela)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nazivDijela)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.model)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.model)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.kolicina)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.kolicina)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cijena)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cijena)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

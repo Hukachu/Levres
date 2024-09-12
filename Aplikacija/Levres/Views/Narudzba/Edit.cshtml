@@ -1,0 +1,46 @@
+﻿@model Levres.Models.Narudzba
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Narudzba</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+            <div class="form-group">
+                <label asp-for="automobilID" class="control-label"></label>
+                <input asp-for="automobilID" class="form-control" />
+                <span asp-validation-for="automobilID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="kupacID" class="control-label"></label>
+                <input asp-for="kupacID" class="form-control" />
+                <span asp-validation-for="kupacID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="datum" class="control-label"></label>
+                <input asp-for="datum" class="form-control" />
+                <span asp-validation-for="datum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tip" class="control-label"></label>
+                <input asp-for="Tip" class="form-control" />
+                <span asp-validation-for="Tip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

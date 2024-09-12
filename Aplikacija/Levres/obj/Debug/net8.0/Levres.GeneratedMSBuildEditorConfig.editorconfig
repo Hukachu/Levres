@@ -1,0 +1,271 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Levres
+build_property.RootNamespace = Levres
+build_property.ProjectDir = C:\Users\User\Documents\ETF\OOAD\Levres\Tim26-Levres\Aplikacija\Levres\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\User\Documents\ETF\OOAD\Levres\Tim26-Levres\Aplikacija\Levres
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Automobil/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b21vYmlsXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Automobil/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b21vYmlsXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Automobil/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b21vYmlsXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Automobil/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b21vYmlsXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Automobil/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b21vYmlsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Automobil/PregledAutaView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b21vYmlsXFByZWdsZWRBdXRhVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Home/ProcjenaVrijednostiView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9jamVuYVZyaWplZG5vc3RpVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Konfiguracija/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29uZmlndXJhY2lqYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Konfiguracija/CreateKonfiguracija.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29uZmlndXJhY2lqYVxDcmVhdGVLb25maWd1cmFjaWphLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Konfiguracija/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29uZmlndXJhY2lqYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Konfiguracija/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29uZmlndXJhY2lqYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Konfiguracija/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29uZmlndXJhY2lqYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Konfiguracija/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29uZmlndXJhY2lqYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Konfiguracija/NeuspješnaKonfiguracija.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29uZmlndXJhY2lqYVxOZXVzcGplxaFuYUtvbmZpZ3VyYWNpamEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Narudzba/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFydWR6YmFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Narudzba/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFydWR6YmFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Narudzba/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFydWR6YmFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Narudzba/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFydWR6YmFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Narudzba/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFydWR6YmFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Narudzba/NeuspjesnaNarudzba.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFydWR6YmFcTmV1c3BqZXNuYU5hcnVkemJhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Narudzba/UspjesnaNarudzba.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFydWR6YmFcVXNwamVzbmFOYXJ1ZHpiYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/NoviAutomobil/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92aUF1dG9tb2JpbFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/NoviAutomobil/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92aUF1dG9tb2JpbFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/NoviAutomobil/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92aUF1dG9tb2JpbFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/NoviAutomobil/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92aUF1dG9tb2JpbFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/NoviAutomobil/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92aUF1dG9tb2JpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Oprema/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3ByZW1hXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Oprema/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3ByZW1hXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Oprema/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3ByZW1hXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Oprema/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3ByZW1hXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Oprema/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3ByZW1hXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Oprema/PregledOpremeView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3ByZW1hXFByZWdsZWRPcHJlbWVWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/PolovniAutomobil/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9sb3ZuaUF1dG9tb2JpbFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/PolovniAutomobil/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9sb3ZuaUF1dG9tb2JpbFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/PolovniAutomobil/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9sb3ZuaUF1dG9tb2JpbFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/PolovniAutomobil/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9sb3ZuaUF1dG9tb2JpbFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/PolovniAutomobil/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9sb3ZuaUF1dG9tb2JpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Servis/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmlzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Servis/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmlzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Servis/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmlzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Servis/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmlzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Servis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmlzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/ETF/OOAD/Levres/Tim26-Levres/Aplikacija/Levres/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9i4e8ar8qq

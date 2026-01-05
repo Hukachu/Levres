@@ -1,1 +1,3 @@
-Levres je platforma koja ima cilj da pojednostavi sistem i kupovine i održavanje vašeg vozila. Ovo je projekat za predmet "Objektno orijentisana analiza i dizajn" na Elektrotehničkom fakultetu u Sarajevu.
+# Levres
+
+Levres is a platform designed to simplify both the purchase and maintenance of your vehicle. This project was created for the course "Object-Oriented Analysis and Design" at the Faculty of Electrical Engineering in Sarajevo. It contains the application source code and accompanying documentation. To get started, explore the project files and documentation folders to understand the structure and functionality.
